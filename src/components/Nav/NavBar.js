@@ -53,9 +53,15 @@ const NavBar = () => {
               </svg>
             </Button>
             <Dropdown.Menu tabIndex={0} className="w-52 menu-compact mt-3">
-              <Dropdown.Item>Home</Dropdown.Item>
+              <Dropdown.Item>
+                {" "}
+                <Link to={"/"}>Home</Link>
+              </Dropdown.Item>
 
-              <Dropdown.Item>Profile</Dropdown.Item>
+              <Dropdown.Item>
+                {" "}
+                <Link to={"/profile"}>Profile</Link>
+              </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
           <Link to={"/"} className="btn btn-ghost normal-case text-xl">
