@@ -13,11 +13,16 @@ import ProfileScreen from "./screens/ProfileScreen";
 import axios from "axios";
 import Home from "./screens/Home";
 import DetailScreen from "./screens/DetailScreen";
+import Error from "./screens/Error";
 
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path="/" element={<HomeScreen></HomeScreen>}>
+      <Route
+        path="/"
+        element={<HomeScreen></HomeScreen>}
+        errorElement={<Error></Error>}
+      >
         <Route
           path="/"
           loader={async () => {
